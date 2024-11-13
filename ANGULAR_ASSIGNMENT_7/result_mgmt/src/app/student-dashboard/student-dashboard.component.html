@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<h6 class="text-center">Student Dashboard</h6>
+<div class="row py-1 mt-4">
+    <strong class="text-center mb-1">Search Your Result</strong><br>
+    <div class="col-md-6 offset-md-3">
+        <fieldset class="form-group border p-3">
+            <form [formGroup]="findStudent">
+                <div class="row mb-3">
+                    <div class="col-3 col-md-4 text-start">
+                        <label for="" class="form-label">Roll Number</label>
+                    </div>
+                    <div class="col-9 col-md-8 text-center">
+                        <input type="text" class="form-input m-0 w-100 rounded border-1" formControlName="rollno"
+                            required placeholder="Roll Number" />
+                            <span class="text-danger" *ngIf="findStudent.controls['rollno'].dirty && findStudent.hasError('required', 'rollno')">*Roll Number is required</span>
+
+                    </div>
+                </div>
+               <!-- <div class="row mb-3">
+                    <div class="col-3 col-md-4 text-start">
+                        <label for="" class="form-label">Name</label>
+                    </div>
+                    <div class="col-9 col-md-8 text-center">
+                        <input type="text" class="form-input m-0 w-100 rounded border-1" formControlName="name"
+                            required placeholder="Name" />
+                            <span class="text-danger" *ngIf="findStudent.controls['name'].dirty && findStudent.hasError('required', 'name')">*Name is required</span>
+
+                    </div>
+                </div> -->
+                <div class="row mb-3 mt-2">
+                    <div class="col align-self-center">
+                        <button [disabled]="!findStudent.valid" routerLink="/student-result" (click)="searchResult()" type="submit"
+                            class="float-right btn btn-success">Search</button>
+                    </div>
+                </div>
+            </form>
+
+        </fieldset>
+    </div>
+</div>
+<router-outlet></router-outlet>

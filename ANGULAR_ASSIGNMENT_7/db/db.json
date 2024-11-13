@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 4,
+      "rollno": "13",
+      "name": "Nimbu",
+      "dateofbirth": "2022-10-11",
+      "score": "98"
+    },
+    {
+      "id": 5,
+      "rollno": "12",
+      "name": "nikki",
+      "dateofbirth": "2022-01-15",
+      "score": "98"
+    },
+    {
+      "id": 6,
+      "rollno": "15",
+      "name": "harish",
+      "dateofbirth": "2020-05-12",
+      "score": "99"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

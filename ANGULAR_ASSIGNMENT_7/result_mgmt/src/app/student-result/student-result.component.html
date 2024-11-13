@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <a class="btn btn-primary" routerLink="/student-dashboard">Back to Dashboard</a>
+    <h6 class="text-center">Student Results</h6>
+    <div class="container">
+        <div class="row" *ngFor="let item of l">
+            <div class="col-md-6 offset-md-3">
+                <div class="card shadow-lg">
+                   
+                    <div class="card-body">
+                        <div class="card-title text-center"> <strong>Result of: {{item.name}}</strong></div>
+                        <div class="row">
+                            
+                            <label for="roll" class="col-sm-5 col-form-label"><b> Roll :</b></label>
+                            <div class="col-sm-7 p-2">
+                                <p>{{item.rollno}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="name" class="col-sm-5 col-form-label"><b>Name :</b></label>
+                            <div class="col-sm-7 p-2">
+                                <p>{{item.name}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="dob" class="col-sm-5 col-form-label"><b>Date of Birth :</b> </label>
+                            <div class="col-sm-7  p-2">
+                                <p>{{item.dateofbirth}}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="score" class="col-sm-5 col-form-label"><b>Score :</b></label>
+                            <div class="col-sm-7 p-2">
+                                <p>{{item.score}}</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

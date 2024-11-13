@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "rollno": "1",
+      "name": "Ram",
+      "dateofbirth": "2003-08-07",
+      "score": "20"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
